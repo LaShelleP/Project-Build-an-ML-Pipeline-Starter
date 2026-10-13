@@ -18,7 +18,7 @@ An end-to-end, reusable MLflow pipeline that downloads rental data, cleans it, t
 
 ## Screenshots
 **Reference tag on clean_sample.csv:**
-![reference tag](reference_tag)
+![reference tag](reference_tag.png)
 ---
 
 

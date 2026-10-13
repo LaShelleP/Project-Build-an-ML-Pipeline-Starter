@@ -20,6 +20,10 @@ An end-to-end, reusable MLflow pipeline that downloads rental data, cleans it, t
 **Reference tag on clean_sample.csv:**
 ![reference tag](reference_tag.png)
 
+
+**Pipeline graph (lineage):**
+![pipeline graph](pipeline_graph.png)
+
 ---
 
 

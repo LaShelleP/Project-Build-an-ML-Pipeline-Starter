@@ -1,4 +1,24 @@
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
+
+**W&B project:** https://wandb.ai/lashelle-priester-western-governors-university/nyc_airbnb
+
+**GitHub repository:** https://github.com/LaShelleP/Project-Build-an-ML-Pipeline-Starter
+
+## Summary
+An end-to-end, reusable MLflow pipeline that downloads rental data, cleans it, tests it, splits it, trains a random forest regressor, and evaluates the production model on a held-out test set. All runs and artifacts are tracked in Weights & Biases.
+
+## Results
+- Best model (hardy-surf-6, tagged `prod`): validation MAE 34.13, R² 0.552
+- Test set: MAE 33.85, R² 0.564, comparable to validation, so no overfitting
+- Release 1.0.1 retrained successfully on `sample2.csv` after adding a NYC geolocation filter to `basic_cleaning`
+
+## Note for reviewer
+The cleaned data artifact is named `clean_sample.csv`, following the project instructions (the rubric refers to it as `clean_data.csv`).
+
+---
+
+
+# Build an ML Pipeline for Short-Term Rental Prices in NYC
 You are working for a property management company renting rooms and properties for short periods of 
 time on various rental platforms. You need to estimate the typical price for a given property based 
 on the price of similar properties. Your company receives new data in bulk every week. The model needs 

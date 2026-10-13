@@ -8,8 +8,8 @@
 An end-to-end, reusable MLflow pipeline that downloads rental data, cleans it, tests it, splits it, trains a random forest regressor, and evaluates the production model on a held-out test set. All runs and artifacts are tracked in Weights & Biases.
 
 ## Results
-- Best model (hardy-surf-6, tagged `prod`): validation MAE 34.13, R² 0.552
-- Test set: MAE 33.85, R² 0.564, comparable to validation, so no overfitting
+- Best hyperparameters (the `config.yaml` defaults) selected from a 5-run sweep; production model artifact `model_export` tagged `prod`
+- Test set: MAE 33.63, R² 0.574, comparable to validation (MAE ~34, R² ~0.55), so no overfitting
 - Release 1.0.1 retrained successfully on `sample2.csv` after adding a NYC geolocation filter to `basic_cleaning`
 
 ## Note for reviewer

@@ -13,8 +13,12 @@ An end-to-end, reusable MLflow pipeline that downloads rental data, cleans it, t
 - Release 1.0.1 retrained successfully on `sample2.csv` after adding a NYC geolocation filter to `basic_cleaning`
 
 ## Note for reviewer
-The cleaned data artifact is named `clean_sample.csv`, following the project instructions (the rubric refers to it as `clean_data.csv`).
+- The cleaned data artifact is named `clean_sample.csv`, following the project instructions (the rubric refers to it as `clean_data.csv`).
+- The reference alias is on clean_sample.csv v0, which was the latest version when tagged; v1–v2 were created later by the sample2 runs.
 
+## Screenshots
+**Reference tag on clean_sample.csv:**
+![reference tag](images/reference_tag.png)
 ---
 
 
